@@ -15,7 +15,7 @@ import com.cbs.usermanagement.service.CustomUserDetailsService;
 @Configuration
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-	//this is to test commit develop
+	//this is to test commit develop some
 	@Autowired	
 	CustomUserDetailsService userService;
 
