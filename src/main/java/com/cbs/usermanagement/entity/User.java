@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
 import com.cbs.usermanagement.model.Address;
 import com.cbs.usermanagement.model.AssociatedUsers;
@@ -23,6 +24,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name="cbs_user")
 public class User {
 
 	@Id
@@ -32,9 +34,9 @@ public class User {
 	private String name;
 	private String password;
 	private String emailID;
-	private Address address;
-	private AssociatedUsers AssociatedUsers;
-	private OrgUser orgUser;
+	//private Address address;
+	//private AssociatedUsers AssociatedUsers;
+	//private OrgUser orgUser;
 	// one to many association
 
 	@ManyToMany(fetch = FetchType.EAGER)
