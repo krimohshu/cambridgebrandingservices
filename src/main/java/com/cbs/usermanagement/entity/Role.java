@@ -2,11 +2,13 @@ package com.cbs.usermanagement.entity;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
 import org.springframework.security.core.GrantedAuthority;
 
@@ -18,6 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name="role")
 public class Role implements GrantedAuthority {
 
 	private static final long serialVersionUID = 1L;
@@ -31,7 +34,7 @@ public class Role implements GrantedAuthority {
 	private String userGroup;
 
 	@ManyToMany(mappedBy = "roles")
-	private Set<User> users;
+    private Set<User> users;
 
 	@Override
 	public String getAuthority() {
