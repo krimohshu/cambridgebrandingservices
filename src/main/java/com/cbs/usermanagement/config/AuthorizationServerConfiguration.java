@@ -22,7 +22,7 @@ import com.cbs.usermanagement.service.CustomUserDetailsService;
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
 
 	private static final String RESOURCE_ID = "myServiceApp";
-
+	
 	TokenStore tokenStore = new InMemoryTokenStore();
 
 	@Autowired
@@ -48,7 +48,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory().withClient("cbsApp").authorizedGrantTypes("password", "refresh_token")
-				.scopes("read", "write").secret(encoder().encode("9999")).resourceIds(RESOURCE_ID);
+				.scopes("read", "write").secret(encoder().encode("{noop}9999")).resourceIds(RESOURCE_ID);
 	}
 
 	public BCryptPasswordEncoder encoder() {
