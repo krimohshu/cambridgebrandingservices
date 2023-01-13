@@ -1,5 +1,6 @@
 package com.cbs.usermanagement.entity;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -38,10 +39,11 @@ public class Role implements GrantedAuthority {
 	private String userGroup;
 //	private Long roleId;
 
-	@ManyToMany(mappedBy = "roles")
+	@ManyToMany(mappedBy = "roles", cascade = { CascadeType.ALL })
 //	@ManyToMany()
 //	@JoinColumn(name = "cbs_user_id",referencedColumnName = "cbs_user_id")
     private Set<User> users;
+;
 
 	@Override
 	public String getAuthority() {

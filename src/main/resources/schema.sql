@@ -1,4 +1,4 @@
-CREATE TABLE cbs_user
+CREATE TABLE cbsuser
   (  
      id					int,
      name               varchar(255),
