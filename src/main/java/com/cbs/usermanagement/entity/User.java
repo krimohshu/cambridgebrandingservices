@@ -1,6 +1,5 @@
 package com.cbs.usermanagement.entity;
 
-import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -14,10 +13,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-
-import com.cbs.usermanagement.model.Address;
-import com.cbs.usermanagement.model.AssociatedUsers;
-import com.cbs.usermanagement.model.OrgUser;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -45,9 +40,11 @@ public class User {
 	// one to many association
 
 	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinTable(name = "cbsuser_role", joinColumns = { @JoinColumn(name = "cbs_user_id") }, inverseJoinColumns = {
-			@JoinColumn(name = "role_id") })
-
+	@JoinTable(
+			name = "cbsuser_role", 
+			joinColumns = @JoinColumn(name = "cbs_user_id"), 
+			inverseJoinColumns = @JoinColumn(name = "role_id")
+			)
 //	@JoinTable(name = "Role", 
 //    joinColumns = @JoinColumn(name = "role_id"), 
 //    inverseJoinColumns = @JoinColumn(name = "cbs_user_id"))
