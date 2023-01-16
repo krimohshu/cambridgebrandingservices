@@ -18,7 +18,7 @@ target/
 *.iws
 *.iml
 *.ipr
-*.metadata
+.metadata/
 .idea/
 target/
 *.iml
@@ -28,6 +28,7 @@ target/
 .tmp
 .DS_Store
 .settings/
+.metadata
 
 
 ### NetBeans ###
