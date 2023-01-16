@@ -1,8 +1,8 @@
-CREATE TABLE cbsuser
+CREATE TABLE cbs.cbsuser
   (  
-     id					int,
+     cbs_user_id	    int,
      name               varchar(255),
      password           varchar(255),
      email              varchar(255),
-     PRIMARY KEY(id)
+     PRIMARY KEY(cbs_user_id)
   );
