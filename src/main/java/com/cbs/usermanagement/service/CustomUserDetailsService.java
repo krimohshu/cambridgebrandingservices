@@ -1,7 +1,8 @@
-package com.javatechie.jwt.api.service;
+package com.cbs.usermanagement.service;
 
-import com.javatechie.jwt.api.entity.User;
-import com.javatechie.jwt.api.repository.UserRepository;
+import com.cbs.usermanagement.entity.User;
+import com.cbs.usermanagement.repository.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

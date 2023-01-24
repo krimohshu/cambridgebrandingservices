@@ -1,4 +1,4 @@
-package com.javatechie.jwt.api.util;
+package com.cbs.usermanagement.util;
 
 import java.util.Date;
 import java.util.HashMap;

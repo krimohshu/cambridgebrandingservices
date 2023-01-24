@@ -1,7 +1,8 @@
-package com.javatechie.jwt.api.config;
+package com.cbs.usermanagement.config;
 
-import com.javatechie.jwt.api.filter.JwtFilter;
-import com.javatechie.jwt.api.service.CustomUserDetailsService;
+import com.cbs.usermanagement.filter.JwtFilter;
+import com.cbs.usermanagement.service.CustomUserDetailsService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

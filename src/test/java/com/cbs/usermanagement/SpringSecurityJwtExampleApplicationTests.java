@@ -1,4 +1,4 @@
-package com.javatechie.jwt.api;
+package com.cbs.usermanagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

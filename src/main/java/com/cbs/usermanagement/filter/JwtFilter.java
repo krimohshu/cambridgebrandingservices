@@ -1,7 +1,8 @@
-package com.javatechie.jwt.api.filter;
+package com.cbs.usermanagement.filter;
 
-import com.javatechie.jwt.api.service.CustomUserDetailsService;
-import com.javatechie.jwt.api.util.JwtUtil;
+import com.cbs.usermanagement.service.CustomUserDetailsService;
+import com.cbs.usermanagement.util.JwtUtil;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

@@ -1,7 +1,8 @@
-package com.javatechie.jwt.api.repository;
+package com.cbs.usermanagement.repository;
 
-import com.javatechie.jwt.api.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cbs.usermanagement.entity.User;
 
 public interface UserRepository extends JpaRepository<User,Integer> {
     User findByUserName(String username);

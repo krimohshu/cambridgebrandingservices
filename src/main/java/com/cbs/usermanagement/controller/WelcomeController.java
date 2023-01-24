@@ -1,7 +1,8 @@
-package com.javatechie.jwt.api.controller;
+package com.cbs.usermanagement.controller;
 
-import com.javatechie.jwt.api.entity.AuthRequest;
-import com.javatechie.jwt.api.util.JwtUtil;
+import com.cbs.usermanagement.entity.AuthRequest;
+import com.cbs.usermanagement.util.JwtUtil;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

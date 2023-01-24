@@ -1,4 +1,4 @@
-package com.javatechie.jwt.api.entity;
+package com.cbs.usermanagement.entity;
 
 import java.util.Set;
 
