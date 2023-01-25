@@ -1,4 +1,4 @@
-package com.cbs.usermanagement.model;
+package com.cbs.usermanagement.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrgUser {
+public class AuthRequest {
 
-	private String orgUserType;
-	private String desc;
+    private String userName;
+    private String password;
 }
